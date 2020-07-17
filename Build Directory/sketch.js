@@ -1,7 +1,9 @@
 function setup() {
-  createCanvas(750, 750);
+  createCanvas(window.innerWidth, window.innerHeight);
   frameRate(10)
 }
+
+window.addEventListener("resize", setup);
 
 
 function getPosition(initialPosition, initialVelocity, acceleration, timeElapsed) {
